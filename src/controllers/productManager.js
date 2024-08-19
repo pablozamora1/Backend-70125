@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import { nanoid } from "nanoid";
+import Swal from "sweetalert2";
 
 class ProductManager {
   constructor() {
@@ -31,16 +32,20 @@ class ProductManager {
       let { title, description, price, thumbnail, code, stock } = product;
 
       if (!title || !description || !price || !code || !stock) {
-        return "Todos los campos son obligatorios, por favor completa los campos faltantes";
+        console.log(
+          "Todos los campos son obligatorios, por favor completa los campos faltantes"
+        );
       }
 
       const readProd = await this.readFiles();
 
       if (readProd.some((item) => item.code === code)) {
-        return `El Codigo ${code} esta Repetido, por favor cambia el codigo del producto y vuelve a intentarlo `;
+        console.log(
+          `El Codigo ${code} esta Repetido, por favor cambia el codigo del producto y vuelve a intentarlo `
+        );
+        return;
       }
       product.id = nanoid();
-      console.log(product);
       const allProducts = [...readProd, product];
       await this.writeProduct(allProducts);
       return product;
