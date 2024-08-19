@@ -1,4 +1,4 @@
-<div class="realTimeBody">
+{{!-- <div class="realTimeBody">
 
     <h1>Productos en Tiempo Real</h1>
 
@@ -7,7 +7,7 @@
         <h2>Formulario para agregar productos </h2>
 
         <form>
-            <input type="text" id="title"  placeholder="Titulo">
+            <input type="text" id="title" placeholder="Titulo">
             <input type="text" id="description" placeholder="Descripción">
             <input type="number" id="price" placeholder="Precio">
             <input type="text" id="thumbnails" placeholder="Imagen">
@@ -26,4 +26,29 @@
         <script src="js/index.js"></script>
     </div>
     <div class="containerProducts" id="containerProducts"></div>
+</div> --}}
+<div class="container">
+    <h1 class="text-center"><strong>Agregar nuevo Producto</strong></h1>
+    <p class="text-center">Ingresa los datos del nuevo producto</p>
+    <form class="row">
+        <div class="col-6">
+            <label class="form-label" for="title">Nombre</label>
+            <input class="form-control" type="text" id="title" required placeholder="ingrese el nombre del articulo">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="description">Descripcion</label>
+            <input class="form-control" type="text" id="description" required
+                placeholder="ingrese la descripcion del articulo">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="price">Precio</label>
+            <input class="form-control" type="number" id="price" required placeholder="ingrese el nombre del articulo">
+        </div>
+        <div class="col-6">
+            <label class="form-label" for="title">Nombre</label>
+            <input class="form-control" type="text" id="title" required placeholder="ingrese el nombre del articulo">
+        </div>
+    </form>
+    <button type="button" id="btnEnviar">Enviar</button>
+
 </div>
