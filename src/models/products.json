@@ -1,27 +1,5 @@
 [
   {
-    "title": "mouse",
-    "description": "barataso",
-    "price": 570,
-    "thumbnails": "https://res.cloudinary.com/dhkxkre7f/image/upload/v1705626600/img/1_qyrrzg.jpg",
-    "code": "abc119",
-    "stock": 25,
-    "status": true,
-    "category": "Componentes PC",
-    "id": "fVwkCau6yiOEP1LznIdtV"
-  },
-  {
-    "title": "notebook",
-    "description": "la mas rapida",
-    "price": 150000,
-    "thumbnails": "https://res.cloudinary.com/dhkxkre7f/image/upload/v1705626600/img/3_tl43fs.jpg",
-    "code": "abc120",
-    "stock": 25,
-    "status": true,
-    "category": "Notebooks",
-    "id": "r8p3qHzuGxyJLE0fuYTJY"
-  },
-  {
     "title": "camara",
     "description": "camara web",
     "price": 4570,

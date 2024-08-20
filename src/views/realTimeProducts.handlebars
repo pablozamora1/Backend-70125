@@ -1,4 +1,4 @@
-{{!-- <div class="realTimeBody">
+<div class="realTimeBody">
 
     <h1>Productos en Tiempo Real</h1>
 
@@ -7,13 +7,13 @@
         <h2>Formulario para agregar productos </h2>
 
         <form>
-            <input type="text" id="title" placeholder="Titulo">
-            <input type="text" id="description" placeholder="Descripción">
-            <input type="number" id="price" placeholder="Precio">
-            <input type="text" id="thumbnails" placeholder="Imagen">
-            <input type="text" id="code" placeholder="Código">
-            <input type="number" id="stock" placeholder="Stock">
-            <input type="text" id="category" placeholder="Categoria">
+            <input type="text" id="title" name="title" placeholder="Titulo" required>
+            <input type="text" id="description" name="description" placeholder="Descripción" required>
+            <input type="number" id="price" name="price" placeholder="Precio" required>
+            <input type="text" id="thumbnails" name="thumbnails" placeholder="Imagen" required>
+            <input type="text" id="code" name="code" placeholder="Código" required>
+            <input type="number" id="stock" name="stock" placeholder="Stock" required>
+            <input type="text" id="category" name="category" placeholder="Categoria" required>
             <select id="status">
                 <option value="true">Activo</option>
                 <option value="false">Inactivo</option>
@@ -26,29 +26,4 @@
         <script src="js/index.js"></script>
     </div>
     <div class="containerProducts" id="containerProducts"></div>
-</div> --}}
-<div class="container">
-    <h1 class="text-center"><strong>Agregar nuevo Producto</strong></h1>
-    <p class="text-center">Ingresa los datos del nuevo producto</p>
-    <form class="row">
-        <div class="col-6">
-            <label class="form-label" for="title">Nombre</label>
-            <input class="form-control" type="text" id="title" required placeholder="ingrese el nombre del articulo">
-        </div>
-        <div class="col-6">
-            <label class="form-label" for="description">Descripcion</label>
-            <input class="form-control" type="text" id="description" required
-                placeholder="ingrese la descripcion del articulo">
-        </div>
-        <div class="col-6">
-            <label class="form-label" for="price">Precio</label>
-            <input class="form-control" type="number" id="price" required placeholder="ingrese el nombre del articulo">
-        </div>
-        <div class="col-6">
-            <label class="form-label" for="title">Nombre</label>
-            <input class="form-control" type="text" id="title" required placeholder="ingrese el nombre del articulo">
-        </div>
-    </form>
-    <button type="button" id="btnEnviar">Enviar</button>
-
 </div>

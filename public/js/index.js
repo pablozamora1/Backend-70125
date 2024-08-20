@@ -59,7 +59,6 @@ const renderProducts = (products) => {
     <p>Id: ${item.id} </p>
     <img src="${item.thumbnails}" alt="">
     <button> Eliminar Producto </button>
-        
         `;
     containerProducts.appendChild(card);
 
