@@ -75,5 +75,27 @@
     "category": "router",
     "status": true,
     "id": "Qwo"
+  },
+  {
+    "title": "monitor",
+    "description": "24 pulgadas",
+    "price": "24455",
+    "thumbnails": "https://res.cloudinary.com/dhkxkre7f/image/upload/v1723343151/img/monitor_avwrah.webp",
+    "code": "112356",
+    "stock": "3",
+    "category": "monitores",
+    "status": true,
+    "id": "d3xZWhx-MpPYDyR0Q1Isi"
+  },
+  {
+    "title": "mouse",
+    "description": "gamer",
+    "price": "12345",
+    "thumbnails": "https://res.cloudinary.com/dhkxkre7f/image/upload/v1705626600/img/1_qyrrzg.jpg",
+    "code": "1234",
+    "stock": "5",
+    "category": "mouse",
+    "status": true,
+    "id": "QIrEBM6_yi_TXZsTzty8f"
   }
 ]

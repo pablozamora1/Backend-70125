@@ -52,17 +52,16 @@ const renderProducts = (products) => {
   products.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("card");
-    //Agregamos boton para eliminar:
     card.innerHTML = `
+    <img src="${item.thumbnails}" alt="">
     <p>Titulo: ${item.title} </p>
     <p>Precio: ${item.price} </p>
     <p>Id: ${item.id} </p>
-    <img src="${item.thumbnails}" alt="">
     <button> Eliminar Producto </button>
         `;
     containerProducts.appendChild(card);
 
-    //Agregamos el evento eliminar producto:
+    //Evento para eliminar producto:
     card.querySelector("button").addEventListener("click", () => {
       deleteProduct(item.id);
     });
