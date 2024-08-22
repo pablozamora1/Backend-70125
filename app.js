@@ -8,7 +8,7 @@ import viewsRouter from "./src/routes/views.router.js";
 import { Server } from "socket.io";
 
 const app = express();
-const PUERTO = 8080;
+const PUERTO = 8081;
 const product = new ProductManager();
 
 //Middleware
